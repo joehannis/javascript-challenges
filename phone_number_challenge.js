@@ -19,8 +19,8 @@ const namesAndDiscounts = [
   { name: 'Karla', discount: 60 }
 ];
 
-const generateMessages = (name) => {
+const generateMessage = (name) => {
   return `Hi ${name.name}! ${name.discount}% off our best candies for you today!`
 };
 
-const generateMessagesNames = namesAndDiscounts.map(generateMessages);
+const generateMessagesNames = namesAndDiscounts.map(generateMessage);
