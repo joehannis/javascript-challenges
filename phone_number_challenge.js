@@ -20,7 +20,7 @@ const namesAndDiscounts = [
 ];
 
 const generateMessages = (name) => {
-  return `Hi ${name}! 50% off our best candies for you today!`
+  return `Hi ${name.name}! ${name.discount}% off our best candies for you today!`
 };
 
-const generateMessagesNames = names.map(generateMessages);
+const generateMessagesNames = namesAndDiscounts.map(generateMessages);
