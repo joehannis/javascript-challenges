@@ -6,8 +6,9 @@ class Pokedex {
   }
 
   catch(name) {
-    fetchPokemon(name).then((data) => {
+    return fetchPokemon(name).then((data) => {
       this.my_pokedex.push(data);
+      return this.my_pokedex;
     });
   }
 
